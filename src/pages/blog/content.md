@@ -1,6 +1,6 @@
 ---
 title: 'Page content'
-layout: '../layouts/Layout.astro'
+layout: '../../layouts/Layout.astro'
 ---
 
 # This is an article example
