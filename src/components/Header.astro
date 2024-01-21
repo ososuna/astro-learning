@@ -1,8 +1,9 @@
 ---
-import HeaderButton from "./HeaderButton.astro";
+import { Counter } from './Counter';
+import HeaderButton from './HeaderButton.astro';
 ---
 
-<header class="px-4 px4 mx-auto max-w-xl lg:py-16 lg:px-6">
+<header transition:persist class="px-4 px4 mx-auto max-w-xl lg:py-16 lg:px-6">
   <div class="mx-auto text-center mb-8 lg:mb-16">
     <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white">
       SpaceX Launches 🚀
@@ -11,6 +12,7 @@ import HeaderButton from "./HeaderButton.astro";
       All the information about SpaceX launches in one place.
     </p>
   </div>
+  <Counter client:visible />
   <nav
     class="flex flex-col items-center justify-between w-full text-center md:flex-row"
   >
